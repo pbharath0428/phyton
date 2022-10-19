@@ -1,0 +1,47 @@
+month =  input ("Enter the name of the  month:")
+day   =  int (input ("Enter the day number:"))
+
+# Determine the season
+if  month == "January" or month == "February":
+   season   =  "Winter"
+elif   month == "March":
+   if  day  <  20:
+     season = "Winter"
+   else :
+     season = "summer"
+elif   month == "April" or month == "May":
+   season   =  "summer"
+elif   month == "June":
+   if  day  <  21:
+     season = "summer"
+   else :
+     season = "spring"
+elif   month == "July" or month == "August":
+   season   =  "Summer"
+elif   month == "September":
+   if  day  <  22:
+     season = "fall"
+   else :
+     season = "winter"
+elif   month == "October"  or month == "November":
+   season   =  "fall"
+elif   month == "December":
+   if  day  <  21:
+     season = "winter"
+   else :
+     season = "summer"
+print (month,     day,  "is   in",  season)
+
+
+5th
+def commonWords(sent1,sent2):
+    sen1=set(sent1)
+    sen2=set(sent2)
+    common=list(sen1.intersection(sen2))
+    return common
+def removeCommonWords(sent1,sent2):
+    sentence1=list(sent1.split())
+    sentence2=list(sent2.split())
+    commonlist=commonWords(sentence1,sentence2)
+    word=0
+    for i in range(le
